@@ -14,7 +14,8 @@
   </div>
 </template>
 
-<script>import {Picker, Dialog} from 'mand-mobile'
+<script>
+import {Picker, Dialog} from 'mand-mobile'
 import district from 'mand-mobile/components/picker/demo/data/district'
 
 export default {
@@ -50,7 +51,7 @@ export default {
     }
     window.PickerTrigger5 = () => {
       this.pickerDefaultIndex = []
-      this.pickerDefaultValue = ['110000', '110100', '110101']
+      
       setTimeout(() => {
         this.$refs.picker.refresh()
       }, 0)
@@ -85,4 +86,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
